@@ -69,7 +69,7 @@ aws s3api create-bucket \
   --region us-west-2 \
   --create-bucket-configuration LocationConstraint=us-west-2
 ```
->![Creating IAM user](screenshots/create-s3.png)
+![Creating IAM user](screenshots/create-s3.png)
 >📌 | A successful response will include a “Location” field confirming the bucket creation.
 
 ---
