@@ -55,7 +55,7 @@ Enter the following when prompted:
 - Region: us-west-2  
 - Output format: json  
 
-📌 | Ensure that the AWS CLI configuration completes successfully before proceeding.
+>📌 | Ensure that the AWS CLI configuration completes successfully before proceeding.
 
 ---
 
@@ -121,7 +121,7 @@ Upload files recursively with public read access.
 ```bash
 aws s3 cp static-website/ s3://<bucket-name>/ --recursive --acl public-read
 ```
->![Copying Files to the S3](screenshots/website.png)
+![Copying Files to the S3](screenshots/website.png)
 >📌 | Use `ls -l` or `aws s3 ls s3://<bucket-name>/` to verify successful upload of all files.
 
 ---
