@@ -34,7 +34,7 @@ Host a static website on Amazon S3 using only the AWS CLI by performing the foll
 
 ## 🗺️ Architecture
 
-*(Insert architecture diagram here if applicable)*
+![S3 Static Website](screenshots/Architecture.png)
 
 ---
 
