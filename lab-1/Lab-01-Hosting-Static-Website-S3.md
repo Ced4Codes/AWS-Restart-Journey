@@ -69,8 +69,8 @@ aws s3api create-bucket \
   --region us-west-2 \
   --create-bucket-configuration LocationConstraint=us-west-2
 ```
-![Creating IAM user](screenshots/create-s3.png)
-📌 | A successful response will include a “Location” field confirming the bucket creation.
+>![Creating IAM user](screenshots/create-s3.png)
+>📌 | A successful response will include a “Location” field confirming the bucket creation.
 
 ---
 
@@ -85,7 +85,7 @@ aws iam attach-user-policy \
   --user-name awsS3user
 ```
 ![Creating IAM user](screenshots/create-iam.png)
-📌 | Create the IAM user immediately after the bucket to maintain workflow. When logged in as `awsS3user`, console access will be limited.
+>📌 | Create the IAM user immediately after the bucket to maintain workflow. When logged in as >`awsS3user`, console access will be limited.
 
 Verify by signing in to the AWS Management Console using the new IAM credentials.
 
@@ -98,7 +98,7 @@ Modify the S3 bucket’s public access settings:
 - Disable **Block All Public Access**.  
 - Enable **Access Control Lists (ACLs)** for **public read**.
 
-📌 | This configuration is used only for the lab. In production, restrict public access to ensure security.
+>📌 | This configuration is used only for the lab. In production, restrict public access to ensure >security.
 
 ---
 
@@ -121,8 +121,8 @@ Upload files recursively with public read access.
 ```bash
 aws s3 cp static-website/ s3://<bucket-name>/ --recursive --acl public-read
 ```
-![Copying Files to the S3](screenshots/website.png)
-📌 | Use `ls -l` or `aws s3 ls s3://<bucket-name>/` to verify successful upload of all files.
+>![Copying Files to the S3](screenshots/website.png)
+>📌 | Use `ls -l` or `aws s3 ls s3://<bucket-name>/` to verify successful upload of all files.
 
 ---
 
@@ -143,7 +143,7 @@ chmod +x update-website.sh
 ./update-website.sh
 ```
 
-📌 | Automation improves consistency in deployments and minimizes human error.
+>📌 | Automation improves consistency in deployments and minimizes human error.
 
 ---
 
@@ -155,8 +155,8 @@ Replace `cp` with `sync` to optimize uploads by only transferring changed files.
 aws s3 sync ~/sysops-activity-files/static-website/ \
   s3://<bucket-name>/ --acl public-read
 ```
-![Website Landing Page](screenshots/cafe-page.png)
-📌 | The `sync` command increases efficiency by reducing upload time.
+>![Website Landing Page](screenshots/cafe-page.png)
+>📌 | The `sync` command increases efficiency by reducing upload time.
 
 ---
 
@@ -170,7 +170,7 @@ aws s3 sync ~/sysops-activity-files/static-website/ \
 
 ---
 
-## 🧩 Troubleshooting Knowledge Base
+## Troubleshooting Knowledge Base
 
 | Issue Number | Categories   | Issue Description                            | Symptoms | Root Cause Analysis | Resolution Procedures | Helpful Tools or Resources | Comments |
 |--------------|---------------|----------------------------------------------|-----------|----------------------|------------------------|-----------------------------|-----------|
