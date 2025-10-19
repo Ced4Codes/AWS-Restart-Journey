@@ -24,7 +24,7 @@ To host a simple web application in a secure and segmented network environment b
 
 ---
 
-## 🗺️ **Architecture**
+## **Architecture**
 
 | Component | Configuration | Purpose |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ nano projects.html
 
 4. Save the file and verify deployment by entering the instance’s **public IPv4 address** (`<ip address>`) in a browser.
 
-📌 | The lab requires using an external code editor for lengthy scripts to minimize syntax errors when copying to the console.
+📌 | Suggestion: Use an external code editor for lengthy scripts to minimize syntax errors when copying to the console.
 
 ---
 
