@@ -26,11 +26,10 @@ This repository serves as a portfolio of AWS cloud computing knowledge, featurin
 
 ```
 AWS-Restart-Journey/
-├── LABS/                    # Core AWS service labs
-├── Compute/                 # EC2, Auto Scaling, Load Balancing
-├── Networking/              # VPC, Subnets, Security Groups
 ├── Storage/                 # S3, EBS, Snapshots
-├── Database/                # RDS, Database Migration
+├── Networking/              # VPC, ELB, Subnets, Security Groups
+├── Compute/                 # EC2, LAMP Stack
+├── Databases/               # RDS, Database Migration
 ├── Monitoring/              # CloudWatch, CloudTrail, Resource Tagging
 ├── Automation/              # CloudFormation, Infrastructure as Code
 └── Personal-Projects/       # Custom AWS implementations (coming soon)
@@ -38,25 +37,24 @@ AWS-Restart-Journey/
 
 ## 🧪 Labs Completed
 
-### Core Services (LABS/)
-- [Lab 01: Introduction to IAM](LABS/LAB-01/)
-- [Lab 02: Amazon VPC - Build Your VPC and Launch Web Server](LABS/LAB-02/)
-- [Lab 03: Database Migration to RDS](LABS/LAB-03/)
-- [Lab 04: Scaling and Load Balancing Your Architecture](LABS/LAB-04/)
-- [Lab 05: Automating Infrastructure Deployment](LABS/LAB-05/)
-
-### Compute
-- [Lab 06: Working with Amazon EBS - Scalable Storage](Compute/LAB-06/)
-
-### Networking
-- [Lab 07: Migrating the Café App Database to Amazon RDS](Networking/LAB(RDS)-Migrate-Database/)
-
 ### Storage
+- [Lab 01: Hosting a Static Website in Amazon S3 using AWS CLI](Storage/LAB(S3)-Website/)
+- [Lab 06: Working with Amazon EBS - Scalable Storage](Storage/LAB(EBS)-EBS/)
 - [Lab 08: Managing Storage with EBS Snapshots and S3 Sync](Storage/LAB(EBS)-Snapshots-S3-Sync/)
 - [Lab 10: S3 Bucket and Public Access Policy](Storage/LAB(S3)-Public-Access-Policy/)
 
+### Networking
+- [Lab 02: Create a VPC with Public/Private Subnets and Deploy a Web Server on EC2](Networking/LAB(VPC)-VPC-with-Server/)
+- [Lab 04: Scaling and Load Balancing Your Architecture](Networking/LAB(ELB)-Scaling-Architecture/)
+
+### Compute
+- [Lab 05: Troubleshooting an EC2 LAMP Deployment with AWS CLI](Compute/LAB(EC2)-LAMP-Troubleshoot/)
+
+### Databases
+- [Lab 07: Migrating the Café App Database to Amazon RDS](Databases/LAB(RDS)-Migrate-Database/)
+
 ### Monitoring
-- [Lab 09: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch) Cloudwatch-and-Config/)
+- [Lab 09: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch)-Cloudwatch-and-Config/)
 - [Lab 11: AWS CloudTrail - Investigating the Café Website Hack](Monitoring/LAB(Cloudwatch)-Investigate-web-app/)
 - [Lab 12: Managing Resources with Tagging](Monitoring/LAB(TAGS)-Managing-tags/)
 
@@ -164,11 +162,10 @@ Feel free to reach out for discussions about AWS, cloud architecture, or collabo
 
 | Category | Labs Completed | Status |
 |----------|---------------|---------|
-| Core Services | 5/5 | ✅ Complete |
+| Storage | 4/4 | ✅ Complete |
+| Networking | 2/2 | ✅ Complete |
 | Compute | 1/1 | ✅ Complete |
-| Networking | 1/1 | ✅ Complete |
-| Storage | 2/2 | ✅ Complete |
-| Database | 1/1 | ✅ Complete |
+| Databases | 1/1 | ✅ Complete |
 | Monitoring | 3/3 | ✅ Complete |
 | Automation | 1/1 | ✅ Complete |
 | Personal Projects | 0/∞ | 🚧 In Progress |
