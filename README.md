@@ -39,89 +39,29 @@ AWS-Restart-Journey/
 ## 🧪 Labs Completed
 
 ### Core Services (LABS/)
-
-#### [Lab 01: Introduction to IAM](LABS/LAB-01/)
-- IAM user and group management
-- Policy-based access control
-- Best practices for AWS account security
-
-#### [Lab 02: Amazon VPC - Build Your VPC and Launch Web Server](LABS/LAB-02/)
-- Custom VPC creation with public and private subnets
-- Internet Gateway and Route Table configuration
-- Security Group setup for web server access
-
-#### [Lab 03: Database Migration to RDS](LABS/LAB-03/)
-- Application database migration from local to Amazon RDS
-- Multi-AZ deployment configuration
-- Database security and backup strategies
-
-#### [Lab 04: Scaling and Load Balancing Your Architecture](LABS/LAB-04/)
-- Application Load Balancer setup
-- Auto Scaling Group configuration
-- High availability architecture design
-
-#### [Lab 05: Automating Infrastructure Deployment](LABS/LAB-05/)
-- CloudFormation template creation
-- Stack management and updates
-- Infrastructure automation best practices
+- [Lab 01: Introduction to IAM](LABS/LAB-01/)
+- [Lab 02: Amazon VPC - Build Your VPC and Launch Web Server](LABS/LAB-02/)
+- [Lab 03: Database Migration to RDS](LABS/LAB-03/)
+- [Lab 04: Scaling and Load Balancing Your Architecture](LABS/LAB-04/)
+- [Lab 05: Automating Infrastructure Deployment](LABS/LAB-05/)
 
 ### Compute
-
-#### [Lab 06: Working with Amazon EBS - Scalable Storage](Compute/LAB-06/)
-- EBS volume creation and attachment
-- File system configuration and mounting
-- Volume snapshots and restoration
-- Storage scalability demonstration
+- [Lab 06: Working with Amazon EBS - Scalable Storage](Compute/LAB-06/)
 
 ### Networking
-
-#### [Lab 07: Migrating the Café App Database to Amazon RDS](Networking/LAB(RDS)-Migrate-Database/)
-- VPC subnet configuration for RDS
-- Security group rules for database access
-- Database endpoint configuration
-- Application connection string migration
+- [Lab 07: Migrating the Café App Database to Amazon RDS](Networking/LAB(RDS)-Migrate-Database/)
 
 ### Storage
-
-#### [Lab 08: Managing Storage with EBS Snapshots and S3 Sync](Storage/LAB(EBS)-Snapshots-S3-Sync/)
-- Automated EBS snapshot creation
-- S3 bucket lifecycle management
-- Cross-region backup strategies
-- Storage cost optimization
-
-#### [Lab 10: S3 Bucket and Public Access Policy](Storage/LAB(S3)-Public-Access-Policy/)
-- S3 bucket policy configuration
-- Public access management
-- Static website hosting
-- Bucket ownership controls
+- [Lab 08: Managing Storage with EBS Snapshots and S3 Sync](Storage/LAB(EBS)-Snapshots-S3-Sync/)
+- [Lab 10: S3 Bucket and Public Access Policy](Storage/LAB(S3)-Public-Access-Policy/)
 
 ### Monitoring
-
-#### [Lab 09: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch) Cloudwatch-and-Config/)
-- CloudWatch metrics and dashboards
-- Custom alarm creation
-- AWS Config compliance monitoring
-- Log aggregation and analysis
-
-#### [Lab 11: AWS CloudTrail - Investigating the Café Website Hack](Monitoring/LAB(Cloudwatch)-Investigate-web-app/)
-- CloudTrail log analysis and forensics
-- Security incident investigation
-- Athena queries for log exploration
-- Account security hardening
-
-#### [Lab 12: Managing Resources with Tagging](Monitoring/LAB(TAGS)-Managing-tags/)
-- Resource tagging strategies
-- Tag-based automation scripts
-- Cost allocation through tags
-- Compliance enforcement via tags
+- [Lab 09: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch) Cloudwatch-and-Config/)
+- [Lab 11: AWS CloudTrail - Investigating the Café Website Hack](Monitoring/LAB(Cloudwatch)-Investigate-web-app/)
+- [Lab 12: Managing Resources with Tagging](Monitoring/LAB(TAGS)-Managing-tags/)
 
 ### Automation
-
-#### [Lab 13: Automation with CloudFormation](Automation/LAB(Cloudformation)-Automate-deployment/)
-- Infrastructure as Code principles
-- CloudFormation template design
-- Stack updates and change sets
-- Resource dependency management
+- [Lab 13: Automation with CloudFormation](Automation/LAB(Cloudformation)-Automate-deployment/)
 
 ## 💼 Personal Projects
 
