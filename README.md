@@ -146,7 +146,15 @@ Each lab follows a consistent structure:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+**What this means:**
+- ✅ You can view and share this work
+- ✅ You must give appropriate credit
+- ❌ You cannot use it for commercial purposes
+- ❌ You cannot copy, modify, or claim it as your own work
+
+See the [LICENSE](LICENSE) file for full details.
 
 ## 🔗 Connect
 
