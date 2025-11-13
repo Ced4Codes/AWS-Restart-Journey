@@ -1,4 +1,4 @@
-# Lab 09: Monitoring Infrastructure
+# Lab 08: Monitoring Infrastructure
 
 ## 📘 **Overview**
 

@@ -32,6 +32,7 @@ AWS-Restart-Journey/
 ├── Databases/               # RDS, Database Migration
 ├── Monitoring/              # CloudWatch, CloudTrail, Resource Tagging
 ├── Automation/              # CloudFormation, Infrastructure as Code
+├── Cost/                    # AWS Pricing Calculator, Cost Optimization
 └── Personal-Projects/       # Custom AWS implementations (coming soon)
 ```
 
@@ -39,27 +40,32 @@ AWS-Restart-Journey/
 
 ### Storage
 - [Lab 01: Hosting a Static Website in Amazon S3 using AWS CLI](Storage/LAB(S3)-Website/)
-- [Lab 06: Working with Amazon EBS - Scalable Storage](Storage/LAB(EBS)-EBS/)
-- [Lab 08: Managing Storage with EBS Snapshots and S3 Sync](Storage/LAB(EBS)-Snapshots-S3-Sync/)
-- [Lab 10: S3 Bucket and Public Access Policy](Storage/LAB(S3)-Public-Access-Policy/)
+- [Lab 05: Working with Amazon EBS - Scalable Storage](Storage/LAB(EBS)-EBS/)
+- [Lab 07: Managing Storage with EBS Snapshots and S3 Sync](Storage/LAB(EBS)-Snapshots-S3-Sync/)
+- [Lab 09: S3 Bucket and Public Access Policy](Storage/LAB(S3)-Public-Access-Policy/)
 
 ### Networking
 - [Lab 02: Create a VPC with Public/Private Subnets and Deploy a Web Server on EC2](Networking/LAB(VPC)-VPC-with-Server/)
-- [Lab 04: Scaling and Load Balancing Your Architecture](Networking/LAB(ELB)-Scaling-Architecture/)
+- [Lab 03: Scaling and Load Balancing Your Architecture](Networking/LAB(ELB)-Scaling-Architecture/)
 
 ### Compute
-- [Lab 05: Troubleshooting an EC2 LAMP Deployment with AWS CLI](Compute/LAB(EC2)-LAMP-Troubleshoot/)
+- [Lab 04: Troubleshooting an EC2 LAMP Deployment with AWS CLI](Compute/LAB(EC2)-LAMP-Troubleshoot/)
 
 ### Databases
-- [Lab 07: Migrating the Café App Database to Amazon RDS](Databases/LAB(RDS)-Migrate-Database/)
+- [Lab 06: Migrating the Café App Database to Amazon RDS](Databases/LAB(RDS)-Migrate-Database/)
 
 ### Monitoring
-- [Lab 09: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch)-Cloudwatch-and-Config/)
-- [Lab 11: AWS CloudTrail - Investigating the Café Website Hack](Monitoring/LAB(Cloudwatch)-Investigate-web-app/)
-- [Lab 12: Managing Resources with Tagging](Monitoring/LAB(TAGS)-Managing-tags/)
+- [Lab 08: Monitoring Infrastructure](Monitoring/LAB(Cloudwatch)-Cloudwatch-and-Config/)
+- [Lab 10: AWS CloudTrail - Investigating the Café Website Hack](Monitoring/LAB(Cloudwatch)-Investigate-web-app/)
+- [Lab 11: Managing Resources with Tagging](Monitoring/LAB(TAGS)-Managing-tags/)
 
 ### Automation
-- [Lab 13: Automation with CloudFormation](Automation/LAB(Cloudformation)-Automate-deployment/)
+- [Lab 12: Automation with CloudFormation](Automation/LAB(Cloudformation)-Automate-deployment/)
+- [Lab 13: CloudFormation Troubleshooting Journey](Automation/LAB(Cloudformation)-Cloudformation-Troubleshoot/)
+- [Lab 15: Using AWS CloudFormation to Create an AWS VPC and EC2 Instance](Automation/LAB(Cloudformation)-Create-AWS-Resources/)
+
+### Cost Optimization
+- [Lab 14: Optimizing Resource Utilization for the Café Web Application](Cost/LAB(Pricing Calculator)-Optimize-Cafe-Resourcces/)
 
 ## 💼 Personal Projects
 
@@ -175,7 +181,8 @@ Feel free to reach out for discussions about AWS, cloud architecture, or collabo
 | Compute | 1/1 | ✅ Complete |
 | Databases | 1/1 | ✅ Complete |
 | Monitoring | 3/3 | ✅ Complete |
-| Automation | 1/1 | ✅ Complete |
+| Automation | 3/3 | ✅ Complete |
+| Cost Optimization | 1/1 | ✅ Complete |
 | Personal Projects | 0/∞ | 🚧 In Progress |
 
 **Last Updated**: November 2025

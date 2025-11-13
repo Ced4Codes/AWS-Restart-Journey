@@ -1,4 +1,4 @@
-# Lab 15: Optimizing Resource Utilization for the Café Web Application
+# Lab 14: Optimizing Resource Utilization for the Café Web Application
 
 ## 📘 **Overview**
 

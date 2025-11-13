@@ -1,4 +1,4 @@
-# Lab 06: Working with Amazon EBS — Scalable Storage on the Cloud
+# Lab 05: Working with Amazon EBS — Scalable Storage on the Cloud
 
 ## **Goal**
 

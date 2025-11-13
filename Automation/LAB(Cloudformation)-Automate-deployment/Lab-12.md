@@ -1,4 +1,4 @@
-# Lab 13: Automation with CloudFormation
+# Lab 12: Automation with CloudFormation
 
 ## 📘 Overview
 

@@ -1,4 +1,4 @@
-# Lab 10: S3 Bucket and Public Access Policy
+# Lab 09: S3 Bucket and Public Access Policy
 
 ## 📘 **Overview**
 
