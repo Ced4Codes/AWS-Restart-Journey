@@ -22,18 +22,9 @@ Create a CloudFormation template that includes:
 
 📌 | The objective is to ensure the **CloudFormation template deploys successfully** without errors.
 
----
+## Architecture
 
-## 🧰 **Tools Used**
-
-- **AWS Management Console**
-- **AWS CloudFormation**
-- **Amazon EC2**
-- **Amazon VPC**
-- **AWS CLI** *(for validation commands)*
-- **Python 3 with boto3** *(optional for SDK testing)*
-
----
+![Architecture.png](screenshots/Architecture.png)
 
 ---
 
@@ -56,7 +47,9 @@ Create a CloudFormation template that includes:
 1. In the AWS Console, open the **CloudFormation** service.
 2. Choose **Create stack → With new resources (standard)**.
 3. Under *Specify template*, select **Template is ready → Upload a template file**.
-4. Upload your CloudFormation YAML file (e.g., `vpc-ec2-lab.yaml`).
+4. Upload your CloudFormation YAML file (e.g., C`halleLab.yaml`).
+
+![UploadTemplate.png](screenshots/UploadTemplate.png)
 
 ---
 
@@ -152,10 +145,13 @@ Resources:
 
 ### Step 4: Configure Stack Details
 
-1. Enter a **Stack name** (e.g., `CloudFormation-VPC-Lab`).
-2. Leave all parameters at default.
-3. Click **Next** through options and permissions screens.
-4. Acknowledge **IAM resource creation**, then choose **Create stack**.
+1. Enter a **Stack name** (e.g., `ChallengeLab`).
+
+![StackName.png](screenshots/StackName.png)
+
+1. Leave all parameters at default.
+2. Click **Next** through options and permissions screens.
+3. Acknowledge **IAM resource creation**, then choose **Create stack**.
 
 ---
 
@@ -163,6 +159,9 @@ Resources:
 
 1. Wait until the stack status changes to **CREATE_COMPLETE**.
 2. Open the **Resources** and **Outputs** tabs to verify successful deployment.
+    
+    ![StackCreateComplete.png](screenshots/StackCreateComplete.png)
+    
 
 📌 | If stack creation fails, use the **Events** tab to identify and resolve template errors.
 
@@ -179,7 +178,15 @@ aws ec2 describe-instances
 
 ```
 
-📌 | These commands confirm that the CloudFormation stack successfully deployed all required components.
+![VPCVerification.png](screenshots/VPCVerification.png)
+
+![SubnetVerification.png](screenshots/SubnetVerification.png)
+
+![InstanceVerification.png](screenshots/InstanceVerification.png)
+
+![SecurityGroupVerification.png](screenshots/SecurityGroupVerification.png)
+
+📌 | These commands confirm that the CloudFormation stack successfully deployed all required components or you could check them in the console manually.
 
 ---
 
