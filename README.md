@@ -101,12 +101,7 @@ AWS-Restart-Journey/
 
 *This section will feature custom AWS implementations and experiments, including:*
 
-- Serverless applications using Lambda and API Gateway
-- CI/CD pipelines with CodePipeline and CodeBuild
-- Multi-tier application architectures
-- Cost optimization strategies and implementations
-- Custom monitoring and alerting solutions
-- Infrastructure automation scripts
+-N/A for now
 
 ## 🛠️ Technologies & Services
 
@@ -190,18 +185,5 @@ Feel free to reach out for discussions about AWS, cloud architecture, or collabo
 ---
 
 **Note**: All labs are performed in sandbox environments. Credentials and sensitive information are never committed to this repository. Always follow AWS security best practices when working with cloud resources.
-
-## 📊 Progress Tracker
-
-| Category | Labs Completed | Status |
-|----------|---------------|---------|
-| Storage | 4/4 | ✅ Complete |
-| Networking | 2/2 | ✅ Complete |
-| Compute | 1/1 | ✅ Complete |
-| Databases | 1/1 | ✅ Complete |
-| Monitoring | 3/3 | ✅ Complete |
-| Automation | 3/3 | ✅ Complete |
-| Cost Optimization | 1/1 | ✅ Complete |
-| Personal Projects | 0/∞ | 🚧 In Progress |
 
 **Last Updated**: November 2025
