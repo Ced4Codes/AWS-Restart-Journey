@@ -1,4 +1,4 @@
-# Lab 04: Scaling and Load Balancing Your Architecture
+# Lab 03: Scaling and Load Balancing Your Architecture
 
 ## 📘 **Overview**
 

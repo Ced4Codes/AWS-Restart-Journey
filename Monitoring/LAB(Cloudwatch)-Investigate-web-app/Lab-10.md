@@ -1,4 +1,4 @@
-# Lab 11: AWS CloudTrail – Investigating the Café Website Hack
+# Lab 10: AWS CloudTrail – Investigating the Café Website Hack
 
 ## 📘 **Overview**
 

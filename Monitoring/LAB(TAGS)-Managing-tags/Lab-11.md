@@ -1,4 +1,4 @@
-# Lab 12 - Managing Resources with Tagging
+# Lab 11 - Managing Resources with Tagging
 
 ## 📘 Overview
 

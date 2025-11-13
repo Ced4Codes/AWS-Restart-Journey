@@ -1,4 +1,4 @@
-# Lab 08: Managing Storage with EBS Snapshots and S3 Sync
+# Lab 07: Managing Storage with EBS Snapshots and S3 Sync
 
 # 📘 **Overview**
 

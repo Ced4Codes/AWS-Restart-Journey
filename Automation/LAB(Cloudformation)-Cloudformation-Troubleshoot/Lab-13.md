@@ -1,4 +1,4 @@
-# Lab 14 - CloudFormation Troubleshooting Journey
+# Lab 13 - CloudFormation Troubleshooting Journey
 
 ## 📘 Overview
 

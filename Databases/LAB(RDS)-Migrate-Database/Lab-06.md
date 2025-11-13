@@ -1,4 +1,4 @@
-# Lab 07: Migrating the Café App Database to Amazon RDS Overview
+# Lab 06: Migrating the Café App Database to Amazon RDS Overview
 
 ## 🎯 **Goal**
 

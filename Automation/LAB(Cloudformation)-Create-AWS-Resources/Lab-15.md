@@ -1,4 +1,4 @@
-# Lab  16 – Using AWS CloudFormation to Create an AWS VPC and EC2 Instance
+# Lab 15 – Using AWS CloudFormation to Create an AWS VPC and EC2 Instance
 
 ## 📘 **Overview**
 

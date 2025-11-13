@@ -1,4 +1,4 @@
-# **Lab 05: Troubleshooting an EC2 LAMP Deployment with AWS CLI**
+# **Lab 04: Troubleshooting an EC2 LAMP Deployment with AWS CLI**
 
 ## 📘 Overview
 
