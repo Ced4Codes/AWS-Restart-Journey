@@ -102,7 +102,7 @@ AWS-Restart-Journey/
 Each lab directory contains:
 - **Lab-##.md**: Detailed step-by-step documentation
 - **screenshots/**: Visual references for each step
-- **scripts/** (when applicable): Automation scripts and configuration files
+- **scripts/** or **YAML templates** (when applicable): Automation scripts, CloudFormation templates, and configuration files
 
 ## 📚 Key Learnings
 
@@ -127,17 +127,6 @@ Each lab directory contains:
 - Analyze logs using Athena queries
 - Automate responses to infrastructure events
 - Track resource compliance with AWS Config
-
-## 🔮 Future Plans
-
-- [ ] Implement serverless applications with Lambda and API Gateway
-- [ ] Set up CI/CD pipelines for automated deployments
-- [ ] Create multi-region architectures for disaster recovery
-- [ ] Develop cost optimization dashboards and reports
-- [ ] Build containerized applications using ECS/EKS
-- [ ] Implement advanced networking with Transit Gateway
-- [ ] Create custom CloudWatch metrics and dashboards
-- [ ] Develop infrastructure testing and validation frameworks
 
 ## 📝 Documentation Standards
 
