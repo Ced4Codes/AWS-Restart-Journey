@@ -5,13 +5,13 @@ A comprehensive repository documenting hands-on AWS labs and personal cloud infr
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Skills Demonstrated](#skills-demonstrated)
 - [Repository Structure](#repository-structure)
 - [Labs Completed](#labs-completed)
 - [Personal Projects](#personal-projects)
 - [Technologies & Services](#technologies--services)
 - [Getting Started](#getting-started)
 - [Key Learnings](#key-learnings)
-- [Future Plans](#future-plans)
 - [License](#license)
 
 ## 🎯 Overview
@@ -21,6 +21,36 @@ This repository serves as a portfolio of AWS cloud computing knowledge, featurin
 - **Structured Lab Documentation**: Step-by-step guides from the AWS Restart program covering foundational to advanced AWS concepts
 - **Personal Cloud Projects**: Custom implementations and experiments demonstrating practical application of AWS services
 - **Best Practices**: Real-world examples of infrastructure as code, security configurations, and monitoring setups
+
+## 💡 Skills Demonstrated
+
+### AWS Services Expertise
+- **Compute**: Amazon EC2, Auto Scaling Groups, Application Load Balancer
+- **Storage**: Amazon S3 (static websites, versioning, lifecycle policies), Amazon EBS (volumes, snapshots)
+- **Database**: Amazon RDS (MariaDB, Multi-AZ deployments, migrations)
+- **Networking**: Amazon VPC, Subnets, Internet Gateways, NAT Gateways, Security Groups, Route Tables
+- **Monitoring & Logging**: Amazon CloudWatch (metrics, alarms, dashboards), AWS CloudTrail (audit logging, forensics), AWS Config (compliance)
+- **Infrastructure as Code**: AWS CloudFormation (template design, stack management, drift detection, troubleshooting)
+- **Cost Management**: AWS Pricing Calculator, resource optimization, right-sizing strategies
+- **Security & Identity**: IAM policies, security group configuration, S3 bucket policies
+
+### Technical Skills
+- **Cloud Architecture**: Designing scalable, highly available, and cost-effective solutions
+- **Infrastructure as Code (IaC)**: Writing and debugging CloudFormation YAML templates
+- **AWS CLI Proficiency**: Resource management, automation scripts, query operations with JMESPath
+- **Linux System Administration**: Bash scripting, cron jobs, log analysis, package management
+- **Database Management**: MySQL/MariaDB administration, data migration strategies
+- **Troubleshooting**: Debugging failed deployments, analyzing CloudWatch logs, investigating security incidents
+- **Version Control**: Git workflow, branch management, pull requests
+- **Documentation**: Technical writing, architecture diagrams, step-by-step guides
+
+### Cloud Best Practices
+- Multi-AZ deployments for high availability
+- Security at multiple layers (network, application, data)
+- Tag-based resource governance and cost allocation
+- Automated backup and disaster recovery strategies
+- Principle of least privilege for IAM and security groups
+- Infrastructure automation and consistency through CloudFormation
 
 ## 📁 Repository Structure
 
