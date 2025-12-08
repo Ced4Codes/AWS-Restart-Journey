@@ -1,0 +1,25 @@
+# =============================================================================
+# SYSTEM DASHBOARD - PYTHON DEPENDENCIES
+# =============================================================================
+
+# Core Framework
+flask==3.0.0
+
+# Production WSGI Server
+gunicorn==21.2.0
+
+# System metrics collection (ESSENTIAL for this app!)
+psutil==5.9.7
+
+# Environment variables
+python-dotenv==1.0.0
+
+# =============================================================================
+# BONUS: Advanced Monitoring (uncomment to add)
+# =============================================================================
+# Prometheus metrics exporter
+# prometheus-flask-exporter==0.23.0
+
+# Flask-SocketIO for real-time WebSocket updates
+# flask-socketio==5.3.6
+# python-socketio==5.10.0
