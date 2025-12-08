@@ -1,0 +1,109 @@
+# =============================================================================
+# DOCKER COMPOSE - E-Commerce Microservices
+# =============================================================================
+# Complete microservices architecture with API Gateway, Product Service,
+# and Order Service.
+#
+# USAGE:
+#   Start all:    docker-compose up -d
+#   View logs:    docker-compose logs -f
+#   Stop:         docker-compose down
+#
+# ACCESS:
+#   Gateway:      http://localhost:8080
+#   Products:     http://localhost:8080/api/products
+#   Orders:       http://localhost:8080/api/orders
+# =============================================================================
+
+version: '3.8'
+
+services:
+  # ===========================================================================
+  # API Gateway (Spring Cloud Gateway)
+  # ===========================================================================
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      PRODUCT_SERVICE_URL: http://product-service:8081
+      ORDER_SERVICE_URL: http://order-service:8082
+    depends_on:
+      product-service:
+        condition: service_healthy
+      order-service:
+        condition: service_healthy
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+  # ===========================================================================
+  # Product Service
+  # ===========================================================================
+  product-service:
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    container_name: product-service
+    ports:
+      - "8081:8081"
+    environment:
+      PORT: 8081
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8081/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 384M
+
+  # ===========================================================================
+  # Order Service
+  # ===========================================================================
+  order-service:
+    build:
+      context: ./order-service
+      dockerfile: Dockerfile
+    container_name: order-service
+    ports:
+      - "8082:8082"
+    environment:
+      PORT: 8082
+      PRODUCT_SERVICE_URL: http://product-service:8081
+    depends_on:
+      product-service:
+        condition: service_healthy
+    networks:
+      - ecommerce-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8082/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 384M
+
+networks:
+  ecommerce-network:
+    driver: bridge

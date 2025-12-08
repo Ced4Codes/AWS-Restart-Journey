@@ -1,0 +1,73 @@
+# =============================================================================
+# Task Management API - Application Configuration
+# =============================================================================
+# This is the development configuration using H2 in-memory database.
+# For production with Docker, use application-docker.yml or environment variables.
+
+spring:
+  application:
+    name: task-management-api
+
+  # H2 In-Memory Database (Development)
+  # DOCKER TIP: Override with PostgreSQL using environment variables or profiles
+  datasource:
+    url: jdbc:h2:mem:taskdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+
+  # Enable H2 Console for development
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+
+# Server Configuration
+server:
+  port: 8080
+
+# Actuator Endpoints (for health checks)
+# DOCKER TIP: These endpoints are critical for container orchestration!
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+# Application Info (exposed via /actuator/info)
+info:
+  app:
+    name: Task Management API
+    description: RESTful API for task management - Docker containerization practice
+    version: 1.0.0
+    docker-challenge: true
+
+# Logging
+logging:
+  level:
+    com.taskapi: INFO
+    org.springframework.web: INFO
+
+# OpenAPI/Swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method

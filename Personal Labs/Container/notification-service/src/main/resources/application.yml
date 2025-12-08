@@ -1,0 +1,62 @@
+# =============================================================================
+# Notification Service - Application Configuration
+# =============================================================================
+
+spring:
+  application:
+    name: notification-service
+
+  # Kafka Configuration
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      retries: 3
+    consumer:
+      group-id: notification-group
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+# Application Configuration
+app:
+  kafka:
+    topic:
+      notifications: notifications
+      dlq: notifications-dlq
+    consumer:
+      group-id: notification-group
+
+# Server Configuration
+server:
+  port: 8081
+
+# Actuator Endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,kafka
+  endpoint:
+    health:
+      show-details: always
+  health:
+    kafka:
+      enabled: true
+
+# Logging
+logging:
+  level:
+    com.notifications: INFO
+    org.apache.kafka: WARN
+    org.springframework.kafka: INFO
+
+# OpenAPI/Swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

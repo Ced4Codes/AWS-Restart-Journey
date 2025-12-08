@@ -59,9 +59,12 @@ This repository serves as a portfolio of AWS cloud computing knowledge, featurin
 AWS-Restart-Journey/
 ├── Personal Labs/           # Custom projects and hands-on practice
 │   └── Container/           # Docker containerization projects
-│       ├── url-shortener/   # URL shortening service with Flask
-│       ├── system-dashboard/# System monitoring dashboard
-│       └── file-share/      # File sharing service
+│       ├── url-shortener/   # URL shortening service (Flask)
+│       ├── system-dashboard/# System monitoring dashboard (Flask)
+│       ├── file-share/      # File sharing service (Flask)
+│       ├── task-management-api/      # REST API (Spring Boot)
+│       ├── notification-service/     # Event-driven with Kafka (Spring Boot)
+│       └── ecommerce-microservices/  # Microservices architecture (Spring Boot)
 │
 └── Restart Labs/            # AWS Restart program lab documentation
     ├── Storage/             # S3, EBS, Snapshots
@@ -106,9 +109,9 @@ AWS-Restart-Journey/
 
 ## 💼 Personal Projects
 
-### 🐳 Docker Containerization Practice
+### 🐳 Docker Containerization Practice - Flask
 
-Three Flask applications designed for learning Docker containerization with progressive challenges:
+Three Flask applications designed for learning Docker containerization:
 
 | Project | Description | Skills Practiced |
 |---------|-------------|------------------|
@@ -116,11 +119,21 @@ Three Flask applications designed for learning Docker containerization with prog
 | [System Dashboard](Personal%20Labs/Container/system-dashboard/) | Real-time system monitoring dashboard | Multi-container orchestration, health checks |
 | [File Share](Personal%20Labs/Container/file-share/) | Secure file upload and sharing service | Volumes, persistent storage, security |
 
+### ☕ Docker Containerization Practice - Spring Boot
+
+Enterprise-grade Spring Boot applications demonstrating advanced containerization patterns:
+
+| Project | Description | Skills Practiced |
+|---------|-------------|------------------|
+| [Task Management API](Personal%20Labs/Container/task-management-api/) | RESTful API with Swagger, JPA, PostgreSQL | Multi-stage builds, health checks, resource limits |
+| [Notification Service](Personal%20Labs/Container/notification-service/) | Event-driven service with Apache Kafka | Kafka orchestration, consumer scaling, DLQ patterns |
+| [E-Commerce Microservices](Personal%20Labs/Container/ecommerce-microservices/) | Multi-service architecture with API Gateway | Service networking, inter-service communication |
+
 **Each project includes:**
-- Complete Flask application code
+- Complete application source code
 - Progressive Docker challenges (Levels 1-5)
 - Hints and solutions for learning
-- AWS EC2 deployment guides
+- AWS EC2/ECS deployment guides
 
 ## 🛠️ Technologies & Services
 
@@ -136,8 +149,9 @@ Three Flask applications designed for learning Docker containerization with prog
 ### Tools & Languages
 - AWS CLI
 - Docker & Docker Compose
+- Java 17 / Spring Boot
 - Python / Flask
-- AWS SDK for PHP
+- Apache Kafka
 - Bash scripting
 - YAML (CloudFormation templates, Docker Compose)
 - SQL (database management)
