@@ -1,0 +1,46 @@
+# =============================================================================
+# URL SHORTENER - PYTHON DEPENDENCIES
+# =============================================================================
+# Install these with: pip install -r requirements.txt
+#
+# DOCKER TIP: In your Dockerfile, you'll do:
+#   COPY requirements.txt .
+#   RUN pip install --no-cache-dir -r requirements.txt
+# =============================================================================
+
+# Core Framework
+flask==3.0.0
+
+# Production WSGI Server (use this instead of Flask's dev server!)
+# DOCKER TIP: Run with: gunicorn --bind 0.0.0.0:5000 app:app
+gunicorn==21.2.0
+
+# =============================================================================
+# DATABASE DEPENDENCIES (uncomment when you add PostgreSQL)
+# =============================================================================
+# Flask-SQLAlchemy - ORM for database operations
+# flask-sqlalchemy==3.1.1
+
+# PostgreSQL adapter
+# psycopg2-binary==2.9.9
+
+# =============================================================================
+# CACHING DEPENDENCIES (uncomment when you add Redis)
+# =============================================================================
+# Redis client for Python
+# redis==5.0.1
+
+# Flask-Caching for easy Redis integration
+# flask-caching==2.1.0
+
+# =============================================================================
+# OPTIONAL: Useful extras for production
+# =============================================================================
+# Environment variable loading from .env files
+python-dotenv==1.0.0
+
+# Request validation
+# marshmallow==3.20.1
+
+# Rate limiting (protect your API!)
+# flask-limiter==3.5.0

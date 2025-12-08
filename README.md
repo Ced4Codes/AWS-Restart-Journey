@@ -31,6 +31,7 @@ This repository serves as a portfolio of AWS cloud computing knowledge, featurin
 - **Networking**: Amazon VPC, Subnets, Internet Gateways, NAT Gateways, Security Groups, Route Tables
 - **Monitoring & Logging**: Amazon CloudWatch (metrics, alarms, dashboards), AWS CloudTrail (audit logging, forensics), AWS Config (compliance)
 - **Infrastructure as Code**: AWS CloudFormation (template design, stack management, drift detection, troubleshooting)
+- **Containers**: Docker, Docker Compose, multi-container orchestration, production-ready deployments
 - **Cost Management**: AWS Pricing Calculator, resource optimization, right-sizing strategies
 - **Security & Identity**: IAM policies, security group configuration, S3 bucket policies
 
@@ -56,14 +57,20 @@ This repository serves as a portfolio of AWS cloud computing knowledge, featurin
 
 ```
 AWS-Restart-Journey/
-├── Storage/                 # S3, EBS, Snapshots
-├── Networking/              # VPC, ELB, Subnets, Security Groups
-├── Compute/                 # EC2, LAMP Stack
-├── Databases/               # RDS, Database Migration
-├── Monitoring/              # CloudWatch, CloudTrail, Resource Tagging
-├── Automation/              # CloudFormation, Infrastructure as Code
-├── Cost/                    # AWS Pricing Calculator, Cost Optimization
-└── Personal-Projects/       # Custom AWS implementations (coming soon)
+├── Personal Labs/           # Custom projects and hands-on practice
+│   └── Container/           # Docker containerization projects
+│       ├── url-shortener/   # URL shortening service with Flask
+│       ├── system-dashboard/# System monitoring dashboard
+│       └── file-share/      # File sharing service
+│
+└── Restart Labs/            # AWS Restart program lab documentation
+    ├── Storage/             # S3, EBS, Snapshots
+    ├── Networking/          # VPC, ELB, Subnets, Security Groups
+    ├── Compute/             # EC2, LAMP Stack
+    ├── Databases/           # RDS, Database Migration
+    ├── Monitoring/          # CloudWatch, CloudTrail, Resource Tagging
+    ├── Automation/          # CloudFormation, Infrastructure as Code
+    └── Cost/                # AWS Pricing Calculator, Cost Optimization
 ```
 
 ## 🧪 Labs Completed
@@ -99,9 +106,21 @@ AWS-Restart-Journey/
 
 ## 💼 Personal Projects
 
-*This section will feature custom AWS implementations and experiments, including:*
+### 🐳 Docker Containerization Practice
 
--N/A for now
+Three Flask applications designed for learning Docker containerization with progressive challenges:
+
+| Project | Description | Skills Practiced |
+|---------|-------------|------------------|
+| [URL Shortener](Personal%20Labs/Container/url-shortener/) | Full-featured URL shortening service with analytics | Dockerfile, Docker Compose, PostgreSQL, Redis, Nginx |
+| [System Dashboard](Personal%20Labs/Container/system-dashboard/) | Real-time system monitoring dashboard | Multi-container orchestration, health checks |
+| [File Share](Personal%20Labs/Container/file-share/) | Secure file upload and sharing service | Volumes, persistent storage, security |
+
+**Each project includes:**
+- Complete Flask application code
+- Progressive Docker challenges (Levels 1-5)
+- Hints and solutions for learning
+- AWS EC2 deployment guides
 
 ## 🛠️ Technologies & Services
 
@@ -116,9 +135,11 @@ AWS-Restart-Journey/
 
 ### Tools & Languages
 - AWS CLI
+- Docker & Docker Compose
+- Python / Flask
 - AWS SDK for PHP
 - Bash scripting
-- YAML (CloudFormation templates)
+- YAML (CloudFormation templates, Docker Compose)
 - SQL (database management)
 - Linux command-line utilities
 
@@ -186,4 +207,4 @@ Feel free to reach out for discussions about AWS, cloud architecture, or collabo
 
 **Note**: All labs are performed in sandbox environments. Credentials and sensitive information are never committed to this repository. Always follow AWS security best practices when working with cloud resources.
 
-**Last Updated**: November 2025
+**Last Updated**: December 2025
