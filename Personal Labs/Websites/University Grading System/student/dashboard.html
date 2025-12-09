@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UniGrade Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-60 bg-white border-r border-slate-200 min-h-screen fixed left-0 top-0">
+            <div class="p-5 border-b border-slate-200">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-slate-900">UniGrade</h1>
+                        <p class="text-xs text-slate-500">Student Portal</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="p-3">
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-indigo-50 text-indigo-700 font-medium text-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 hover:bg-slate-100 text-sm mt-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    My Grades
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 hover:bg-slate-100 text-sm mt-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Courses
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 hover:bg-slate-100 text-sm mt-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Transcript
+                </a>
+            </nav>
+            <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-slate-200">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-semibold text-sm" id="userAvatar">JD</div>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-medium text-sm text-slate-900 truncate" id="userName">John Doe</p>
+                        <p class="text-xs text-slate-500" id="userId">STU001</p>
+                    </div>
+                    <button onclick="logout()" class="p-1.5 hover:bg-slate-100 rounded" title="Logout">
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="flex-1 ml-60">
+            <header class="bg-white border-b border-slate-200 px-8 py-5 sticky top-0 z-10">
+                <h2 class="text-xl font-semibold text-slate-900">Dashboard</h2>
+                <p class="text-sm text-slate-500 mt-0.5">Welcome back! Here's your academic overview.</p>
+            </header>
+
+            <div class="p-8">
+                <!-- Stats -->
+                <div class="grid grid-cols-4 gap-5 mb-8">
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <p class="text-sm text-slate-500 mb-1">Current GPA</p>
+                        <p class="text-2xl font-bold text-slate-900">3.75</p>
+                        <p class="text-xs text-green-600 mt-1">+0.2 from last semester</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <p class="text-sm text-slate-500 mb-1">Credits Earned</p>
+                        <p class="text-2xl font-bold text-slate-900">87<span class="text-sm font-normal text-slate-400"> / 120</span></p>
+                        <div class="w-full bg-slate-100 rounded-full h-1.5 mt-2"><div class="bg-indigo-600 h-1.5 rounded-full" style="width:72%"></div></div>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <p class="text-sm text-slate-500 mb-1">Active Courses</p>
+                        <p class="text-2xl font-bold text-slate-900">5</p>
+                        <p class="text-xs text-slate-400 mt-1">Fall 2024</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-5">
+                        <p class="text-sm text-slate-500 mb-1">Class Rank</p>
+                        <p class="text-2xl font-bold text-slate-900">12<span class="text-sm font-normal text-slate-400"> / 156</span></p>
+                        <p class="text-xs text-slate-400 mt-1">Top 8%</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- Grades Table -->
+                    <div class="col-span-2 bg-white rounded-xl border border-slate-200">
+                        <div class="p-5 border-b border-slate-200 flex items-center justify-between">
+                            <h3 class="font-semibold text-slate-900">Current Semester Grades</h3>
+                        </div>
+                        <div class="divide-y divide-slate-100" id="gradesContainer"></div>
+                    </div>
+
+                    <!-- GPA Chart -->
+                    <div class="bg-white rounded-xl border border-slate-200">
+                        <div class="p-5 border-b border-slate-200"><h3 class="font-semibold text-slate-900">GPA History</h3></div>
+                        <div class="p-5 space-y-4">
+                            <div class="flex items-center justify-between"><span class="text-sm text-slate-600">Semester 1</span><span class="text-sm font-medium">3.50</span></div>
+                            <div class="flex items-center justify-between"><span class="text-sm text-slate-600">Semester 2</span><span class="text-sm font-medium">3.65</span></div>
+                            <div class="flex items-center justify-between"><span class="text-sm text-slate-600">Semester 3</span><span class="text-sm font-medium">3.80</span></div>
+                            <div class="flex items-center justify-between"><span class="text-sm text-slate-600">Current</span><span class="text-sm font-medium text-green-600">3.75</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        // Auth check
+        const user = JSON.parse(sessionStorage.getItem('user') || 'null');
+        if (!user || user.role !== 'student') { window.location.href = 'index.html'; }
+        
+        document.getElementById('userName').textContent = user.name;
+        document.getElementById('userId').textContent = user.id;
+        document.getElementById('userAvatar').textContent = user.name.split(' ').map(n=>n[0]).join('');
+
+        const grades = [
+            { course: 'CS301 - Data Structures', grade: 'A', credits: 3 },
+            { course: 'CS302 - Algorithms', grade: 'A-', credits: 3 },
+            { course: 'MATH201 - Linear Algebra', grade: 'B+', credits: 4 },
+            { course: 'PHYS101 - Physics I', grade: 'A', credits: 4 },
+            { course: 'ENG102 - Technical Writing', grade: 'B', credits: 2 }
+        ];
+        const colors = { 'A': 'bg-green-100 text-green-700', 'A-': 'bg-green-100 text-green-700', 'B+': 'bg-blue-100 text-blue-700', 'B': 'bg-blue-100 text-blue-700' };
+        document.getElementById('gradesContainer').innerHTML = grades.map(g => `
+            <div class="flex items-center justify-between px-5 py-4 hover:bg-slate-50">
+                <div><p class="font-medium text-slate-900">${g.course}</p><p class="text-sm text-slate-500">${g.credits} Credits</p></div>
+                <span class="px-3 py-1 rounded-full text-sm font-medium ${colors[g.grade]||'bg-slate-100 text-slate-700'}">${g.grade}</span>
+            </div>`).join('');
+
+        function logout() { sessionStorage.clear(); window.location.href = 'index.html'; }
+    </script>
+</body>
+</html>
